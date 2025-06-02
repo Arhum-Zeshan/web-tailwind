@@ -1,7 +1,7 @@
 import React from "react";
 import { Button } from "@/components/ui/button";
 import Header from "../components/Header";
-import FooterMain from "../components/Faqall/Footrer/FooterMain";
+
 
 const page = () => {
   return (
@@ -10,7 +10,7 @@ const page = () => {
     <div className="flex justify-center">
     <div className=" border flex-col w-fit m-3 p-3 container flex  gap-1 rounded-md border-gray-500">
       <div className="">
-        <h1>Report an Issue</h1>
+        <h1>Report an Issues</h1>
         <p className="text-gray-400">What are you having problems with?</p>
       </div>
       <div className="flex flex-col sm:flex-row space-x-6 p-4 justify-between ">

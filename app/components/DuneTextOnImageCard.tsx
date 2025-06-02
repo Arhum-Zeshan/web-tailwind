@@ -44,129 +44,45 @@ const DuneTextOnImageCard = ({number,topheading,desc}:DuneTextProps) => {
 };
 
 const DuneTextOnImageCardall= () => {
+  var a = [
+    { number: "01", topheading: " World’s Most Luxurious : Price Dune Buggy", desc: "  Step into the lap of luxury with the world’s most extravagant and expensive dune buggy — a true marvel that combines high-performance capabilities with the opulence of a luxury…" },
+    { number: "02", topheading: " World’s Most Luxurious : Price Dune Buggy", desc: "  Step into the lap of luxury with the world’s most extravagant and expensive dune buggy — a true marvel that combines high-performance capabilities with the opulence of a luxury…" },
+    { number: "03", topheading: " World’s Most Luxurious : Price Dune Buggy", desc: "  Step into the lap of luxury with the world’s most extravagant and expensive dune buggy — a true marvel that combines high-performance capabilities with the opulence of a luxury…" },
+    { number: "04", topheading: " World’s Most Luxurious : Price Dune Buggy", desc: "  Step into the lap of luxury with the world’s most extravagant and expensive dune buggy — a true marvel that combines high-performance capabilities with the opulence of a luxury…" },
+    { number: "05", topheading: " World’s Most Luxurious : Price Dune Buggy", desc: "  Step into the lap of luxury with the world’s most extravagant and expensive dune buggy — a true marvel that combines high-performance capabilities with the opulence of a luxury…" },
+    { number: "06", topheading: " World’s Most Luxurious : Price Dune Buggy", desc: "  Step into the lap of luxury with the world’s most extravagant and expensive dune buggy — a true marvel that combines high-performance capabilities with the opulence of a luxury…" },
+  ];
   return (
-         <div className="bg-black flex w-screen md:w-screen flex-wrap gap-20 justify-center  ">
-          
-          <div className="grid grid-rows-3 md:grid-cols-3 gap-10">
-            <DuneTextOnImageCard
-              number="01"
-              topheading=" World’s Most
-              Luxurious : Price
-              Dune Buggy"
-              desc="  Step into the lap of luxury with the world’s most extravagant and
-          expensive dune buggy — a true marvel that combines high-performance
-          capabilities with the opulence of a luxury…"
-            />
-            <DuneTextOnImageCard
-              number="02"
-              topheading=" World’s Most
-              Luxurious : Price
-              Dune Buggy"
-              desc="  Step into the lap of luxury with the world’s most extravagant and
-          expensive dune buggy — a true marvel that combines high-performance
-          capabilities with the opulence of a luxury…"
-            />
-            <DuneTextOnImageCard
-              number="03"
-              topheading=" World’s Most
-              Luxurious : Price
-              Dune Buggy"
-              desc="  Step into the lap of luxury with the world’s most extravagant and
-          expensive dune buggy — a true marvel that combines high-performance
-          capabilities with the opulence of a luxury…"
-            />{" "}
-            <DuneTextOnImageCard
-              number="04"
-              topheading=" World’s Most
-              Luxurious : Price
-              Dune Buggy"
-              desc="  Step into the lap of luxury with the world’s most extravagant and
-          expensive dune buggy — a true marvel that combines high-performance
-          capabilities with the opulence of a luxury…"
-            />{" "}
-            <DuneTextOnImageCard
-              number="05"
-              topheading=" World’s Most
-              Luxurious : Price
-              Dune Buggy"
-              desc="  Step into the lap of luxury with the world’s most extravagant and
-          expensive dune buggy — a true marvel that combines high-performance
-          capabilities with the opulence of a luxury…"
-            />{" "}
-            <DuneTextOnImageCard
-              number="06"
-              topheading=" World’s Most
-              Luxurious : Price
-              Dune Buggy"
-              desc="  Step into the lap of luxury with the world’s most extravagant and
-          expensive dune buggy — a true marvel that combines high-performance
-          capabilities with the opulence of a luxury…"
-            />
-          </div>
-        </div>
-      );
+    <div className="bg-black flex w-screen md:w-screen flex-wrap gap-20 justify-center  ">
+      {a.map((item, index) => (
+        <DuneTextOnImageCard
+          key={index}
+          {...item}
+        />
+      ))}
+    </div>
+  );
 };
 
 const DuneTextOnImageCardFamily= () => {
+  var a = [
+    { number: "01", topheading: " World’s Most Luxurious : Price Dune Buggy", desc: "  Step into the lap of luxury with the world’s most extravagant and expensive dune buggy — a true marvel that combines high-performance capabilities with the opulence of a luxury…" },
+    { number: "02", topheading: " World’s Most Luxurious : Price Dune Buggy", desc: "  Step into the lap of luxury with the world’s most extravagant and expensive dune buggy — a true marvel that combines high-performance capabilities with the opulence of a luxury…" },
+    { number: "03", topheading: " World’s Most Luxurious : Price Dune Buggy", desc: "  Step into the lap of luxury with the world’s most extravagant and expensive dune buggy — a true marvel that combines high-performance capabilities with the opulence of a luxury…" },
+    { number: "04", topheading: " World’s Most Luxurious : Price Dune Buggy", desc: "  Step into the lap of luxury with the world’s most extravagant and expensive dune buggy — a true marvel that combines high-performance capabilities with the opulence of a luxury…" },
+    { number: "05", topheading: " World’s Most Luxurious : Price Dune Buggy", desc: "  Step into the lap of luxury with the world’s most extravagant and expensive dune buggy — a true marvel that combines high-performance capabilities with the opulence of a luxury…" },
+    { number: "06", topheading: " World’s Most Luxurious : Price Dune Buggy", desc: "  Step into the lap of luxury with the world’s most extravagant and expensive dune buggy — a true marvel that combines high-performance capabilities with the opulence of a luxury…" },
+  ];
+
   return (
          <div className="bg-black flex w-screen md:w-screen flex-wrap gap-20 justify-center  ">
           
-          <div className="grid grid-rows-3 md:grid-cols-3 gap-10">
-            <DuneTextOnImageCard
-              number="01"
-              topheading=" World’s Most
-              Luxurious : Price
-              Dune Buggy"
-              desc="  Step into the lap of luxury with the world’s most extravagant and
-          expensive dune buggy — a true marvel that combines high-performance
-          capabilities with the opulence of a luxury…"
-            />
-            <DuneTextOnImageCard
-              number="02"
-              topheading=" World’s Most
-              Luxurious : Price
-              Dune Buggy"
-              desc="  Step into the lap of luxury with the world’s most extravagant and
-          expensive dune buggy — a true marvel that combines high-performance
-          capabilities with the opulence of a luxury…"
-            />
-            <DuneTextOnImageCard
-              number="03"
-              topheading=" World’s Most
-              Luxurious : Price
-              Dune Buggy"
-              desc="  Step into the lap of luxury with the world’s most extravagant and
-          expensive dune buggy — a true marvel that combines high-performance
-          capabilities with the opulence of a luxury…"
-            />{" "}
-            <DuneTextOnImageCard
-              number="04"
-              topheading=" World’s Most
-              Luxurious : Price
-              Dune Buggy"
-              desc="  Step into the lap of luxury with the world’s most extravagant and
-          expensive dune buggy — a true marvel that combines high-performance
-          capabilities with the opulence of a luxury…"
-            />{" "}
-            <DuneTextOnImageCard
-              number="05"
-              topheading=" World’s Most
-              Luxurious : Price
-              Dune Buggy"
-              desc="  Step into the lap of luxury with the world’s most extravagant and
-          expensive dune buggy — a true marvel that combines high-performance
-          capabilities with the opulence of a luxury…"
-            />{" "}
-            <DuneTextOnImageCard
-              number="06"
-              topheading=" World’s Most
-              Luxurious : Price
-              Dune Buggy"
-              desc="  Step into the lap of luxury with the world’s most extravagant and
-          expensive dune buggy — a true marvel that combines high-performance
-          capabilities with the opulence of a luxury…"
-            />
-          </div>
+        {a.map((item, index) => (
+        <DuneTextOnImageCard
+          key={index}
+          {...item}
+        />
+      ))}
         </div>
       );
 };

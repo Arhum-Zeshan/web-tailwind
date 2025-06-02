@@ -1,6 +1,7 @@
 import React from 'react';
 
-const GridHoverSingle = ({ imgId = 1011, price = '1.399,00 AED' }) => {
+const GridHoverSingle = (props: { imgId?: number; price?: string }) => {
+  const { imgId = 1011, price = '1.399,00 AED' } = props;
   return (
     <div className="w-full sm:w-[48%] md:w-[32%] lg:w-[25%] flex-grow group-hover:flex-grow-0 hover:flex-grow transition-all duration-500 relative overflow-hidden rounded-lg">
       <img
@@ -18,14 +19,21 @@ const GridHoverSingle = ({ imgId = 1011, price = '1.399,00 AED' }) => {
   );
 };
 
+const gridItems = [
+  { imgId: 1011, price: "1.399,00 AED" },
+  { imgId: 1015, price: "1.500,00 AED" },
+  { imgId: 1016, price: "1.500,00 AED" },
+  { imgId: 1020, price: "1.550,00 AED" },
+  { imgId: 1022, price: "1.600,00 AED" },
+  { imgId: 1021, price: "1.600,00 AED" },
+];
+
 const GridHoverMultiple = () => {
   return (
     <div className="flex flex-wrap gap-4 p-4 group bg-black px-20">
-      <GridHoverSingle imgId={1011} price="1.399,00 AED" />
-      <GridHoverSingle imgId={1015} price="1.500,00 AED" />
-      <GridHoverSingle imgId={1016} price="1.500,00 AED" />
-      <GridHoverSingle imgId={1020} price="1.550,00 AED" />
-      <GridHoverSingle imgId={1022} price="1.600,00 AED" /><GridHoverSingle imgId={1021} price="1.600,00 AED" />
+      {gridItems.map((item, index) => (
+        <GridHoverSingle key={index} {...item} />
+      ))}
     </div>
   );
 };

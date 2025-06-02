@@ -9,7 +9,7 @@ const ObjactPass = () => {
 
     { fname: "", Lname: "Ali" },
 
-    { fname: "M.......", Lname: "Ali" },
+    { fname: "M.......s", Lname: "Ali" },
 
     { fname: "M++", Lname: "Ali" },
 

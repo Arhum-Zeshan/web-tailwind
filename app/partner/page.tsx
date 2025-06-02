@@ -10,7 +10,7 @@ const page = () => {
   return (
     <>
       <LastTwoPages
-        title="BE PARTNER"
+        title="BE PARTNE3R"
         desc="At Global Desert Dubai, we believe the best experiences are built through partnership. Whether you’re a fellow tour operator, travel agency, or adventure enthusiast"
       booknow="REGISTRATION"/>
       <BecomePartner/>

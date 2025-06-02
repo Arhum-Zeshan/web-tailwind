@@ -8,7 +8,7 @@ const page = () => {
     <>
       <QuadBiking
         title="Family Dubai Dune Buggy Adventure"
-        desc="Ride the wild side where the Global Desert meets thrill"
+        desc="Rides the wild side where the Global Desert meets thrill"
         price=" Start at 1100AED "
       />
 

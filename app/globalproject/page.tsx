@@ -7,14 +7,17 @@ import { DuneTextOnImageCardall } from "../components/DuneTextOnImageCard";
 import { employees } from "@/app/data/employees";
 import { Product } from "../components/ProductShowcase";
 import { products } from "../data/products";
+import MaxFinder from "../components/MaxFinder";
 const page = () => {
- 
   return (
-    <div className="flex " >
-      {products.map((product) => 
-        <Product key={product.id} product={product} />
-      )}
-    </div  >
+    <>
+      {/* <div className="flex ">
+        {products.map((product) => (
+          <Product key={product.id} product={product} />
+        ))}
+      </div> */}
+      <MaxFinder />
+    </>
   );
 };
 

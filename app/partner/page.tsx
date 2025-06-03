@@ -4,7 +4,7 @@ import LastTwoPages from "../components/LastTwoPages";
 import BecomePartner from "../components/BecomePartner";
 import ShipSteps from "../components/ShipSteps";
 import DubaiCampEquipment from "../components/DubaiCampEquipment";
-import HoverTextImage from "../components/HoverTextImage";
+import {HoverTextImage} from "../components/HoverTextImage";
 
 const page = () => {
   return (

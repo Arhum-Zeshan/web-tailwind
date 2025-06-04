@@ -1,5 +1,6 @@
 "use client";
 
+import { Flag } from "lucide-react";
 import React, { useState } from "react";
 
 const MaxFinder = () => {
@@ -33,9 +34,6 @@ const MaxFinder = () => {
     </>
   );
 };
-
-
-
 
 const MaxFinder2 = () => {
   const [selected, setSelected] = useState(1); // Default number of inputs
@@ -71,73 +69,76 @@ const MaxFinder2 = () => {
   );
 };
 
-
 const MaxFinder3 = () => {
-  const numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]; // Declared array on top
-  const [count, setCount] = useState(1);
+  var numbers = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9];
+
+  const isPrime = (n: number) => {
+    for (var i = 2; i < n; i++) {
+      if (n % i == 0) return false;
+    }
+
+    return true;
+  };
+
+  function getPrimes() {
+    return numbers.filter((num) => isPrime(num));
+  }
+  const isOdd = (n: number) => n % 2 != 0;
+
+  function elementsAvg() {
+    const odds = numbers.filter((num) => isOdd(num));
+    console.log(odds);
+    const sumOfOdds = odds.reduce((a, b) => a + b);
+    return sumOfOdds / odds.length;
+  }
+  const power = (base: number, exp: number) => {
+    var result = base;
+    for (var i = 1; i < exp; i++) {
+      result = result * base;
+    }
+    return result;
+  };
+  const isPalinDrome = (text: string) => text === reversString(text);
+
+  const reversString = (text: string) => text.split("").reverse().join("");
+
+  const numberMultiplybyn = (n: number) => numbers.map((num) => num * n);
 
   return (
-    <div>
-      {/* Dropdown using the numbers array */}
-      <select onChange={(e) => setCount(Number(e.target.value))}>
-        {numbers.map((num) => (
-          <option key={num} value={num}>
-            {num}
-          </option>
-        ))}
-      </select>
-
-      {/* Input fields based on selected count */}
-      <div style={{ marginTop: "10px" }}>
-        {numbers.slice(0, count).map((_, i) => (
-          <input
-            key={i}
-            type="text"
-            placeholder={`Input ${i + 1}`}
-            style={{ display: "block", margin: "5px 0" }}
-          />
-        ))}
-      </div>
-    </div>
+    <>
+      <h2>{isPalinDrome("arhum") ? "true" : "false"}</h2>
+    </>
   );
 };
 
+const PalinDromeFinder = () => {
+   const [username,setUsername]= useState("")
+  const feedBack=()=>{
+   
+    if(username.length < 3) {
+    return "Username must be at least 3 characters long"}
+    else if(username.length > 15) {
+      return "Username must be less than 15 characters long"
+    }
+  
+    const reversedUsername = username.split("").reverse().join("");
+    if(reversedUsername === username) {
+      return "Username is a palindrome";
+    } else {
+      return "Username is not a palindrome";
+    }
+  
 
-const MaxFinder4 = () => {
-  const numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]; // Declared array
-  const [count, setCount] = useState(1);
-
+  }
   return (
     <div>
-      {/* Dropdown to choose how many inputs */}
-      <select onChange={(e) => setCount(Number(e.target.value))}>
-        {numbers.map((num) => (
-          <option key={num} value={num}>
-            {num}
-          </option>
-        ))}
-      </select>
-
-      {/* Input fields — use a check to limit how many are shown */}
-      <div style={{ marginTop: "10px" }}>
-        {numbers.map((_, i) =>
-          i < count ? (
-            <input
-              key={i}
-              type="text"
-              placeholder={`Input ${i + 1}`}
-              style={{ display: "block", margin: "5px 0" }}
-            />
-          ) : null
-        )}
-      </div>
+      <h1>{feedBack()}</h1>
+      <input type="text" value={username}
+      onChange={(e) => setUsername(e.target.value)}/>
     </div>
-  );
-};
+  )
+}
+export { MaxFinder, MaxFinder2, MaxFinder3, PalinDromeFinder };
 
-
-
-
-export { MaxFinder, MaxFinder2, MaxFinder3, MaxFinder4 };
 
 

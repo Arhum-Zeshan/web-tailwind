@@ -7,7 +7,7 @@ import { DuneTextOnImageCardall } from "../components/DuneTextOnImageCard";
 import { employees } from "@/app/data/employees";
 import { Product } from "../components/ProductShowcase";
 import { products } from "../data/products";
-import {MaxFinder,MaxFinder2,MaxFinder3,MaxFinder4} from "../components/MaxFinder";
+import {PalinDromeFinder} from "../components/MaxFinder";
 const page = () => {
   return (
     <>
@@ -16,10 +16,8 @@ const page = () => {
           <Product key={product.id} product={product} />
         ))}
       </div> */}
-      <MaxFinder />
-      <MaxFinder2 />
-      <MaxFinder3 />
-      <MaxFinder4 />
+      <PalinDromeFinder/>
+    
     </>
   );
 };

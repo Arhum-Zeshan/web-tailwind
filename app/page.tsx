@@ -8,24 +8,34 @@ import { OffRoadClassifiedFamily } from "./components/OffRoadClassified";
 import {MapFunctionNumber, MapFunctionString} from "./components/MapFunction";
 import {FilterNumber, FilterObject} from "./components/filter";
 import ObjactPass from "./components/ObjactPass";
+import DoubleDigitChecker from "./components/DoubleDigitChecker";
+import OddDigitChecker from "./components/OddDigitChecker";
+import BothDigitsOddChecker from "./components/BothDigitsOddChecker";
+import FirstDigitOddChecker from "./components/FirstDigitOddChecker";
+import SecondDigitOddChecker from "./components/SecondDigitOddChecker";
+import CenterDigitOddChecker from "./components/CenterDigitOddChecker";
+import PalindromeChecker from "./components/PalindromeChecker";
+import ReverseAndHalf from "./components/ReverseAndHalf";
+import { Aladin } from "next/font/google";
+import AllDigitsSameChecker from "./components/AllDigitsSameChecker";
+import HasFiveChecker from "./components/HasFiveChecker";
+import EndsWithFiveChecker from "./components/EndsWithFiveChecker";
 
 export default function Home() {
   return (
     <main className="container flex flex-col  justify-center items-center mx-auto pb-4 p-50">
       
-      <Task
-        bgColor="#ffff00"
-        desc="Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi tenetur incidunt repellat delectus iusto amet odit fugiat fuga nesciunt! Omnis dignissimos earum reprehenderit eius vel, velit perspiciatis enim ad similique!
-"
-        Name="Arhum Zeeshan"
-        location="abcdF"
-      />
-      <OffRoadClassifiedFamily/>
-      <MapFunctionNumber/>
-      <MapFunctionString/>
-      <FilterNumber/>
-      <FilterObject/>
-      <ObjactPass/>
+    <DoubleDigitChecker/>
+      <OddDigitChecker/>
+      <BothDigitsOddChecker/>
+      <FirstDigitOddChecker/>
+      <SecondDigitOddChecker/>
+      <CenterDigitOddChecker/>
+      <PalindromeChecker/>
+      <ReverseAndHalf/>
+      <AllDigitsSameChecker/>
+      <HasFiveChecker/>
+      <EndsWithFiveChecker/>
     </main>
   );
 }

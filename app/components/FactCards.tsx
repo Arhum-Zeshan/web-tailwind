@@ -41,6 +41,7 @@ const TemperatureFacts = () => {
           desc="The temperature at which water turns to ice"
           cardBg="bg-blue-50"
           textColor='text-blue-700'
+          
         />
         <FactCard
           icon={FaHome}

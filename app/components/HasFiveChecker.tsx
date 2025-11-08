@@ -1,4 +1,5 @@
 import { useState } from "react";
+// This component checks if a number contains the digit '5'.
 
 export default function HasFiveChecker() {
   const [input, setInput] = useState("");

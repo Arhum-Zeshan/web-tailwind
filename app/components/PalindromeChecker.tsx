@@ -1,5 +1,5 @@
 import { useState } from "react";
-
+// This component checks if a 3-digit number is a palindrome or not.
 export default function PalindromeChecker() {
   const [input, setInput] = useState("");
   const [result, setResult] = useState("");

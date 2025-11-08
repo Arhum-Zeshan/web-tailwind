@@ -1,4 +1,5 @@
 import { useState } from "react";
+// This component checks if all digits of a 3-digit number are the same.
 
 export default function AllDigitsSameChecker() {
   const [input, setInput] = useState("");

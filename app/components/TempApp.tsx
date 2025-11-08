@@ -34,7 +34,7 @@ const TempApp = () => {
             Celsius (°C)
           </h2>
           <p className="text-3xl font-bold text-blue-700 text-center">
-            {celsius}
+            {(celsius).toFixed(1)}
           </p>
           <label className="text-sm text-gray-600 ">
             Use slider (-50°C to 100°C):
@@ -44,14 +44,14 @@ const TempApp = () => {
             min={-50}
             step={0.1}
             max={100}
-            value={celsius}
+            value={(celsius).toFixed(1)}
             onChange={(e) => setCelsius(parseFloat(e.target.value))}
             className="w-full h-2 bg-gray-200 rounded-lg cursor-pointer  "
           />
           <label className="text-sm text-gray-600">Or enter exact value:</label>
           <input
             type="number"
-            value={celsius}
+            value={(celsius).toFixed(1)}
             step="0.1"
             onChange={(e) => setCelsius(parseFloat(e.target.value))}
             className="border border-blue-400 rounded px-2 py-1 w-full text-center "
@@ -64,7 +64,7 @@ const TempApp = () => {
             Fahrenheit (°F)
           </h2>
           <p className="text-3xl font-bold text-red-700 text-center">
-            {Fahrenheit}
+            {(Fahrenheit).toFixed(1)}
           </p>
           <label className="text-sm text-gray-600 text-center">
             Use slider (-58°F to 212°F):
@@ -74,7 +74,7 @@ const TempApp = () => {
             min={-58}
             max={212}
             step={0.1}
-            value={Fahrenheit}
+            value={(Fahrenheit).toFixed(1)}
             onChange={(e) =>
               setCelsius(((parseFloat(e.target.value) - 32) * 5) / 9)
             }
@@ -83,7 +83,7 @@ const TempApp = () => {
           <label className="text-sm text-gray-600">Or enter exact value:</label>
          <input
             type="number"
-            value={Fahrenheit}
+            value={(Fahrenheit).toFixed(1)}
             step="0.1"
             onChange={(e) => setCelsius(((parseFloat(e.target.value) - 32) * 5) / 9)}
             className="border border-red-400 rounded px-2 py-1 w-full text-center focus:outline-none focus:ring-2 focus:ring-red-300 "

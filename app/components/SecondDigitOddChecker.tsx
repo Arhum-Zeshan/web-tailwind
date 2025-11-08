@@ -1,6 +1,7 @@
 "use client";
 import React from "react";
 import { useState } from "react";
+// This component checks if the second digit of a two-digit number is odd or not.
 
 export default function SecondDigitOddChecker() {
   const [input, setInput] = useState("");

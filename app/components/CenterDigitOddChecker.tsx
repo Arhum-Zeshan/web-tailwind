@@ -1,6 +1,7 @@
 "use client";
 import React from "react";
 import { useState } from "react";
+// This component checks if the second digit of a 3-digit number is odd or not.
 
 export default function CenterDigitOddChecker() {
   const [input, setInput] = useState("");

@@ -20,12 +20,14 @@ import { Aladin } from "next/font/google";
 import AllDigitsSameChecker from "./components/AllDigitsSameChecker";
 import HasFiveChecker from "./components/HasFiveChecker";
 import EndsWithFiveChecker from "./components/EndsWithFiveChecker";
+import { Sign } from "crypto";
+import Signheader from "./components/Signheader";
 
 export default function Home() {
   return (
     <main className="container flex flex-col  justify-center items-center mx-auto pb-4 p-50">
       
-    
+    <Signheader ></Signheader>
     </main>
   );
 }

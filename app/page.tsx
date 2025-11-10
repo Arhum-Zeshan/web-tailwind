@@ -25,17 +25,7 @@ export default function Home() {
   return (
     <main className="container flex flex-col  justify-center items-center mx-auto pb-4 p-50">
       
-    <DoubleDigitChecker/>
-      <OddDigitChecker/>
-      <BothDigitsOddChecker/>
-      <FirstDigitOddChecker/>
-      <SecondDigitOddChecker/>
-      <CenterDigitOddChecker/>
-      <PalindromeChecker/>
-      <ReverseAndHalf/>
-      <AllDigitsSameChecker/>
-      <HasFiveChecker/>
-      <EndsWithFiveChecker/>
+    
     </main>
   );
 }

@@ -32,7 +32,9 @@ export default function RootLayout({
       >
         
        <BlackHeader/>
+
         {children}
+        
         <FooterBlack/>
       </body>
     </html>

@@ -1,5 +1,6 @@
 import Image from "next/image";
 
+
 const OffRoadClassified = ({ children }) => {
   return (
     <div className="flex flex-col md:flex-row justify-center items-center gap-8 flex-wrap">
